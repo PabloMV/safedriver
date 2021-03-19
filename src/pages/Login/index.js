@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, Image } from 'react-native'
-import { Container, Button, ButtonText } from '../../styles'
+import { Container, Button, ButtonText, Title } from '../../styles'
 import logo from '../../assets/logo.png'
 
 const Login = () => {
@@ -22,6 +22,7 @@ const Login = () => {
                     <ButtonText>Fazer Login com Google</ButtonText>
                 </Button>
             </Container>
+            <Title>By Pablo Viana</Title>
         </Container>
     )
 }
