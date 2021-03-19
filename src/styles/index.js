@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
-import theme from './theme.json';
+import styled from 'styled-components/native'
+import theme from './theme.json'
 
 //import MapView from 'react-native-maps';
 //import Pulse from 'react-native-pulse';
@@ -16,6 +16,19 @@ export const Container = styled.View`
   max-width: ${(props) => props.width || '100%'};
   max-height: ${(props) => (props.height ? props.height + 'px' : 'auto')};
   position: ${(props) => props.position || 'relative'};
-  top: ${(props) => props.top || 0};
+  top: ${(props) => props.top || 0}px;
   z-index: ${(props) => props.zIndex || 1};
+`;
+
+export const Button = styled.TouchableOpacity`
+  width: 100%;
+  padding: ${(props) => (props.compact ? 5 : 15)}px;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  background: ${(props) =>
+    props.type ? theme.colors[props.type] : theme.colors.primary};
+`;
+
+export const ButtonText = styled.Text`
+  text-align: center;
+  color: ${(props) => (props.color ? theme.colors[props.color] : '#000')};
 `;
