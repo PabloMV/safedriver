@@ -1,18 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { Text, View } from 'react-native';
 
-import Login from './src/pages/Login'
-import Type from './src/pages/steps/type'
-import Car from './src/pages/steps/car'
-import Payment from './src/pages/steps/payment'
-import Ride from './src/pages/Ride'
-import Home from './src/pages/Home'
+import React from 'react'
 
 
-export default function App() {
-  return (
-   <Home />
-  )   
+import Routes from './src/routes'
+import { Provider } from 'react-redux'
+import store from './src/store'
+
+
+export default function App() { 
+    return (
+      <Provider store={store} >
+        <Routes />
+      </Provider>
+    )
 }
 

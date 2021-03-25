@@ -10,24 +10,18 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
+    "facebookScheme": "fb388371155672971",
+    "facebookAppId":"388371155672971",
+    "facebookDisplayName":"safedriver",
+    "facebookAutoInitEnabled":true,
+    "scheme": "mycoolredirect",
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.safedriver.app"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "br.com.safedriver.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDD3W240W_fwKqIoQe1FZ2kvTm75Xc4lQs"
+        }
+      }
     }
   }
 }
